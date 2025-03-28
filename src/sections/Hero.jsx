@@ -7,7 +7,7 @@ const Hero = () => {
 
       <section className="relative bg-emerald-50 pt-[95px]  md:pt-[80px] lg:pt-[100px]  pb-8 md:pb-0 " id='home' >
 
-        <div className='h-screen md:flex md:items-center  '>
+        <div className='md:h-screen md:flex md:items-center  '>
           
 
           <div className="px-4 md:pl-6 md:pr-0 mx-auto container max-w-screen-xl flex justify-center mb-[60px]">

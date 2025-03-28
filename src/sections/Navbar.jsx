@@ -56,7 +56,7 @@ const Nav = () => {
               spy={true} 
               smooth={true} 
               offset={link.offset}  
-              duration={300}  
+              duration={400}  
               activeClass="active"
               className='max-md:hover:font-semibold md:hover:text-black'
             >
