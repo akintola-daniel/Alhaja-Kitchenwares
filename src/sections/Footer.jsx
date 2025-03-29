@@ -30,8 +30,8 @@ const Footer = () => {
               </div>
 
              <div className='flex flex-col gap-2 mt-1'>
-              {list.links.map((link)=>
-                   <p className='block text-[14px] lg:text-[15px]'>{link.name}</p>
+              {list.links.map((link, index)=>
+                   <p className='block text-[14px] lg:text-[15px]' key={index}>{link.name}</p>
                    )}
              </div>
             </div>

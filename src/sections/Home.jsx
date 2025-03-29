@@ -1,17 +1,16 @@
 import { placeholder } from '@/assets/images'
 import { Button } from '@/components/ui/button'
 import { kitchenWares } from '@/constants'
+import { ChevronRight } from 'lucide-react'
 import React from 'react'
-import {PrdctNavBar } from './index'
+import { Link } from "react-router-dom";
 
 
 
-const Products = () => {
+const Home = () => {
   return (
-
-    <section id="products" className=" pt-[100px] md:pt-[120px] pb-12 md:py-24 lg:py-32  bg-slate-50">
-      <PrdctNavBar/>
-      <div className="container px-4 md:px-6 max-w-screen-xl mx-auto">
+    <section id="home" className=" pt-[100px] md:pt-[120px] pb-12 md:py-24 lg:py-32  bg-slate-50">
+      <div className="container px-4 md:px-6 max-w-screen-xl mx-auto mb-12">
         {/* Section Heading */}
         <div className="flex flex-col justify-center items-center ">
 
@@ -68,10 +67,26 @@ const Products = () => {
           ))}
         </div>
 
+        {/* View All Button */}
+        <div className="flex justify-center">
 
+
+        <Link to="/products"><Button
+            variant="outline"
+            className="border bg-white border-emerald-600 text-emerald-600 hover:bg-emerald-50 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 hover:no-underline"
+            aria-label="View all products" 
+          >
+            View All Products <ChevronRight className="ml-2 h-4 w-4" />
+          </Button></Link>
+
+
+        </div>
       </div>
+      
     </section>
+    
+    
   )
 }
 
-export default Products
+export default Home

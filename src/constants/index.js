@@ -7,47 +7,52 @@ import { FaFacebookSquare} from "react-icons/fa";
 
 export const navLinks = [
   { href: "home", label: "Home", offset:-70 },
-  { href: "products", label: "Products", offset:-60 },
   { href: "why-us", label: "Why Us", offset:-60 },
   { href: "reviews", label: "Reviews", offset:-60 },
   { href: "Contact Us", label: "Contact Us", offset:-420 },
+];
+
+export const navLinks2 = [
+  { href: "/", label: "Home", offset:-70,  isRoute: true},
+  { href: "products", label: "Products", offset:-60, isRoute: false},
+  { href: "Contact Us", label: "Contact Us", offset:-420, isRoute: false },
 ];
 
 export const kitchenWares = [
   {
     id: 1,
     name: "Kitchen Ware 1",
-    price: "₦5,000.00",
+    price: "₦5,000",
     image: image4,
   },
   {
     id: 2,
     name: "Kitchen Ware 2",
-    price: "₦12,000.00",
+    price: "₦12,000",
     image: image4,
   },
   {
     id: 3,
     name: "Kitchen Ware 3",
-    price: "₦200,000.00",
+    price: "₦200,000",
     image: image4,
   },
   {
     id: 4,
     name: "Kitchen Ware 4",
-    price: "₦25,000.00",
+    price: "₦25,000",
     image: image4,
   },
   {
     id: 5,
     name: "Kitchen Ware 5",
-    price: "₦25,000.00",
+    price: "₦25,000",
     image: image4,
   },
   {
     id: 6,
     name: "Kitchen Ware 6",
-    price: "₦25,000.00",
+    price: "₦25,000",
     image: image4,
   },
 ];

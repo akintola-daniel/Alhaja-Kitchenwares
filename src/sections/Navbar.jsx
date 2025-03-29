@@ -67,9 +67,9 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className='hidden md:flex md:gap-9 lg:gap-12'>
+      <div className='hidden md:flex md:gap-6 '>
         {navLinks.map((link, index) => (
-          <div className='max-md:border-b max-md:border-gray-400 max-md:pb-2 max-md:px-2 cursor-pointer ' key={index}>
+          <div className='max-md:border-b max-md:border-gray-400 max-md:pb-2 max-md:px-2 cursor-pointer text-gray-600' key={index}>
           <Link 
             to={link.href} 
             onClick={toggleMenu} 
