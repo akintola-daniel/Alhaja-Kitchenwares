@@ -31,7 +31,7 @@ const Products = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="mx-auto grid max-w-5xl justify-items-center gap-6 pt-10 pb-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+        <div className="mx-auto grid max-w-5xl justify-items-center gap-6 pt-10 pb-12 grid-cols-2 md:grid-cols-3 lg:gap-12">
           {kitchenWares.map((product, index) => (
             <div
               key={index}
@@ -49,19 +49,23 @@ const Products = () => {
 
               {/* Product Info */}
               <div className="bg-white p-4 border-t">
-                <h3 className="font-bold text-gray-800">{product.name}</h3>
 
-                <div className="mt-2 flex items-center justify-between">
+               <div className='max-sm:flex max-sm:flex-col max-sm:justify-center '>
+                <h3 className="font-bold text-gray-800 max-sm:text-center">{product.name}</h3>
 
-                  <span className="text-sm sm:text-lg font-semibold text-emerald-600">{product.price}</span>
+                <div className="md:mt-2 flex max-sm:flex-col sm:items-center sm:justify-between">
+
+                  <span className="text-sm sm:text-lg font-semibold text-emerald-600 max-sm:text-center">{product.price}</span>
 
                   <Button
                     size="sm"
-                    className="bg-emerald-600 hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                    className="bg-emerald-600 hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 max-sm:mt-1"
                     aria-label={`Add ${product.name} to cart`}
                   >
                     Add to Cart
                   </Button>
+               </div>
+
                 </div>
               </div>
             </div>
